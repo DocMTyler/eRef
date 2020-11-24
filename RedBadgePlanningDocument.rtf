@@ -1,0 +1,122 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033\deflangfe2052{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\fnil\fcharset0 Avenir;}{\f2\froman\fprq2\fcharset0 Times New Roman;}{\f3\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;}
+{\stylesheet{ Normal;}{\s1 heading 1;}{\s2 heading 2;}{\s3 heading 3;}}
+{\*\generator Riched20 10.0.19041}{\*\mmathPr\mnaryLim0\mdispDef1\mwrapIndent1440 }\viewkind4\uc1 
+\pard\keep\keepn\widctlpar\sa60\sl276\slmult1\qc\cf1\f0\fs52  \par
+
+\pard\widctlpar\sl276\slmult1\fs22\par
+\par
+
+\pard\keep\keepn\widctlpar\sa60\sl276\slmult1\qc\fs52\par
+
+\pard\widctlpar\sl276\slmult1\fs22\par
+\par
+\par
+\par
+
+\pard\keep\keepn\widctlpar\sa60\sl276\slmult1\qc\fs52\par
+\f1 Project Name\par
+
+\pard\widctlpar\sl276\slmult1\f0\fs22\par
+\par
+\par
+\tab\tab\tab\tab     \fs40 eReferendum\fs30\par
+
+\pard\keep\keepn\widctlpar\sa320\sl276\slmult1\qr\par
+
+\pard\keep\keepn\pagebb\widctlpar\s3\sb320\sa80\sl276\slmult1\f1\fs32 Tyler Hougland\fs30\par
+\ul\fs28 Table of Contents\fs24\par
+
+\pard\widctlpar\sb200\sl240\slmult1 {\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf2\ul\f1\fs24 Database}}}}\f1\fs24\par
+{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf2\ul\f1\fs24 Features}}}}\f1\fs24\par
+{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf2\ul\f1\fs24 Trello}}}}{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf2\ul\f1\fs24  }}}}{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf2\ul\f1\fs24 Link}}}}\f1\fs24\par
+{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "#h.q85md16hzpog"}}{\fldrslt{\ul\cf2\ul\f1\fs24 Wireframe}}}}\f1\fs24\par
+{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf2\ul\f1\fs24 Schedule}}}}\f1\fs24\par
+
+\pard\widctlpar\sb200\sa80\sl240\slmult1 {\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf2\ul\f1\fs24 Final}}}}{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf2\ul\f1\fs24  }}}}{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "\\l "}}{\fldrslt{\ul\cf2\ul\f1\fs24 Notes}}}}\ulnone\f0\fs28\par
+
+\pard\keep\keepn\pagebb\widctlpar\s3\sb320\sa80\sl276\slmult1 Mission Statement\par
+
+\pard\widctlpar\sl276\slmult1\f1\fs24 The goal of this MVC is to create a more direct link between the voting population, the content of what will be voted on, and the representatives who vote in the government. \f0\fs22\par
+
+\pard\keep\keepn\widctlpar\s3\sb320\sa80\sl276\slmult1\fs28 Database - Associations listed in Appendix,Diagram 1\f1\fs24\par
+
+\pard\widctlpar\sl276\slmult1\par
+\ul\fs22 Voters\ulnone\tab\tab\tab\tab\tab\tab\tab\tab\ul Lesislators\par
+\ulnone ID\tab\tab integer\tab\tab\tab\tab\tab\tab ID\tab\tab integer\par
+VoterID\tab integer\tab\tab\tab\tab\tab\tab Name\tab\tab string\par
+Name\tab\tab string\tab\tab\tab\tab\tab\tab GovLevel\tab enum\par
+PartyAff\tab enum\tab\tab\tab\tab\tab\tab GovPosition\tab string\par
+District\tab\tab enum\tab\tab\tab\tab\tab\tab District\tab\tab enum\par
+Address\tab string\par
+\ul\par
+\ulnone\tab\tab\tab\tab\tab\ul Legislation\par
+
+\pard\widctlpar\li3600\sl276\slmult1\ulnone ID\tab integer\tab\tab\tab\tab\tab\ul\par
+
+\pard\widctlpar\sl276\slmult1\ulnone\tab\tab\tab\tab\tab Name\tab string\par
+\tab\tab\tab\tab\tab MajDescription\tab string\par
+\tab\tab\tab\tab\tab MinDescription\tab string\par
+\tab\tab\tab\tab\tab OrigDoc\tab\tab string\par
+\tab\tab\tab\tab\tab AddDescription\tab string\tab\tab\par
+\tab\tab\tab\tab\tab Author\tab\tab\tab string\par
+\tab\tab\tab\tab\tab VoteDate\tab\tab DateTime\par
+\par
+
+\pard\widctlpar\fi720\sl276\slmult1\ul\b Features\b0\par
+\ulnone - Voters should be able to read legislation representatives vote on\par
+- Voters should be able to vote on legislation(This is not the process of voting for or against a REPRESENTATIVE, but to give the rep an idea of how their constituents would vote.\par
+- Representatives should be able to add, change, vote on, and delete legislation\par
+- Voters should have a simple description that summarizes the majority opinion, and the minority opinion, and well as a look at additional concerns that differ from these opinions, and who they are being suggested by.\par
+\f0\fs28\par
+\trowd\trgaph108\trleft-100\trbrdrl\brdrs\brdrw10\brdrbtw\brdrbar \trbrdrt\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx4580\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx9260 
+\pard\intbl\widctlpar\sl276\slmult1\f1\fs24 Version 1.0 / MVP\cell Version 2.0 / Stretch Goals\cell\row\trowd\trgaph108\trleft-100\trbrdrl\brdrs\brdrw10\brdrbtw\brdrbar \trbrdrt\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx4580\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx9260 
+\pard\intbl{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sl276\slmult1\tx360\tx720 CRUD for Voter Database\par
+{\pntext\f3\'B7\tab}CRUD for Rep Database\par
+{\pntext\f3\'B7\tab}CRUD for Legislation Db\par
+{\pntext\f3\'B7\tab}Voters have vote feature\par
+{\pntext\f3\'B7\tab}Feature 5\par
+{\pntext\f3\'B7\tab}Feature 6\par
+{\pntext\f3\'B7\tab}Feature 7\par
+{\pntext\f3\'B7\tab}Feature 8\par
+{\pntext\f3\'B7\tab}Feature 9\cell Feature 1\par
+{\pntext\f3\'B7\tab}Feature 2\par
+{\pntext\f3\'B7\tab}Feature 3\par
+{\pntext\f3\'B7\tab}Feature 4\cell\row 
+\pard\keep\keepn\widctlpar\s3\sb320\sa80\sl276\slmult1\f0\fs28\par
+Trello Link\par
+
+\pard\widctlpar\sl276\slmult1 {\f1\fs24{\field{\*\fldinst{HYPERLINK https://trello.com/b/yA3kpVwd/eref }}{\fldrslt{https://trello.com/b/yA3kpVwd/eref\ul0\cf0}}}}\f0\fs22\par
+\par
+
+\pard\keep\keepn\pagebb\widctlpar\s3\sb320\sa80\sl276\slmult1\fs28 Schedule\fs22\par
+
+\pard\widctlpar\sl276\slmult1\par
+\trowd\trgaph108\trleft-100\trrh255\trbrdrl\brdrs\brdrw10\brdrbtw\brdrbar \trbrdrt\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx1237\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx2574\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx3911\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx5248\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx6585\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx7922\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx9259 
+\pard\intbl\nowidctlpar\sl240\slmult1\qc\b\f1\fs24 Day 1\cell Day 2\cell Day 3\cell Day 4\cell Day 5\cell Day 6\cell Day 7\cell\row\trowd\trgaph108\trleft-100\trbrdrl\brdrs\brdrw10\brdrbtw\brdrbar \trbrdrt\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx1237\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx2574\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx3911\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx5248\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx6585\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx7922\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx9259 
+\pard\intbl\nowidctlpar\sl240\slmult1\b0\f0\fs22 Backgroud research\cell Background Research\cell Set up MVC layers\cell Set up MVC layers\cell Set up \par
+MVC layers\cell Set up MVC layers\cell Test MVC\cell\row\trowd\trgaph108\trleft-100\trbrdrl\brdrs\brdrw10\brdrbtw\brdrbar \trbrdrt\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx1237\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx2574\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx3911\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx5248\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx6585\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx7922\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx9259 
+\pard\intbl\nowidctlpar\sl240\slmult1\qc\b\f1\fs24 Day 8\cell Day 9\cell Day 10\cell Day 11\cell Day 12\cell Day 13\cell Day 14\cell\row\trowd\trgaph108\trleft-100\trbrdrl\brdrs\brdrw10\brdrbtw\brdrbar \trbrdrt\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx1237\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx2574\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx3911\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx5248\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx6585\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx7922\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx9259 
+\pard\intbl\nowidctlpar\sl240\slmult1\b0\f0\fs22 Test MVC\cell Rework Portfolio\cell Rework Portfolio\cell Rework Portfolio\cell Edit MVC \cell Edit MVC\cell Final Touches\cell\row\trowd\trgaph108\trleft-100\trbrdrl\brdrs\brdrw10\brdrbtw\brdrbar \trbrdrt\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx1237\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx2574\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx3911\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx5248\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx6585\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx7922\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx9259 
+\pard\intbl\nowidctlpar\sl240\slmult1\qc\b\f1\fs24 Day 15\cell Day 16\cell Day 17\cell Day 18\cell 
+\pard\intbl\nowidctlpar\sl240\slmult1\b0\f0\fs22\cell\cell\cell\row\trowd\trgaph108\trleft-100\trbrdrl\brdrs\brdrw10\brdrbtw\brdrbar \trbrdrt\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx1237\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx2574\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx3911\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx5248\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx6585\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx7922\clbrdrl\brdrw20\brdrs\brdrcf1\clbrdrt\brdrw20\brdrs\brdrcf1\clbrdrr\brdrw20\brdrs\brdrcf1\clbrdrb\brdrw20\brdrs\brdrcf1 \cellx9259 
+\pard\intbl\nowidctlpar\sl240\slmult1 Final Touches\cell Final Touches\cell Final Touches\cell\cell\cell\cell\cell\row 
+\pard\widctlpar\sl276\slmult1\par
+
+\pard\keep\keepn\pagebb\widctlpar\s3\sb320\sa80\sl276\slmult1\fs28 Final Notes\par
+
+\pard\widctlpar\sl276\slmult1\f1\fs24 Great job with planning! You are now set to start coding. Planning a project is incredibly beneficial to the success of your team and your project. Here are some resources to help you with your planning.\par
+\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sl276\slmult1\tx360\tx720 {\f0\fs22{\field{\*\fldinst{HYPERLINK "https://selftaughtcoders.com/plan-web-application/"}}{\fldrslt{\ul\cf2\ul\f1\fs24 How}}}}{\f0\fs22{\field{\*\fldinst{HYPERLINK "https://selftaughtcoders.com/plan-web-application/"}}{\fldrslt{\ul\cf2\ul\f1\fs24  }}}}{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "https://selftaughtcoders.com/plan-web-application/"}}{\fldrslt{\ul\cf2\ul\f1\fs24 to}}}}{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "https://selftaughtcoders.com/plan-web-application/"}}{\fldrslt{\ul\cf2\ul\f1\fs24  }}}}{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "https://selftaughtcoders.com/plan-web-application/"}}{\fldrslt{\ul\cf2\ul\f1\fs24 plan}}}}{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "https://selftaughtcoders.com/plan-web-application/"}}{\fldrslt{\ul\cf2\ul\f1\fs24  }}}}{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "https://selftaughtcoders.com/plan-web-application/"}}{\fldrslt{\ul\cf2\ul\f1\fs24 a}}}}{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "https://selftaughtcoders.com/plan-web-application/"}}{\fldrslt{\ul\cf2\ul\f1\fs24  }}}}{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "https://selftaughtcoders.com/plan-web-application/"}}{\fldrslt{\ul\cf2\ul\f1\fs24 web}}}}{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "https://selftaughtcoders.com/plan-web-application/"}}{\fldrslt{\ul\cf2\ul\f1\fs24  }}}}{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "https://selftaughtcoders.com/plan-web-application/"}}{\fldrslt{\ul\cf2\ul\f1\fs24 application}}}}\ulnone\f1\fs24\par
+{\pntext\f3\'B7\tab}{\f0\fs22{\field{\*\fldinst{HYPERLINK "https://medium.com/@ericwindmill/step-by-step-planning-a-web-application-ddaa010a8353"}}{\fldrslt{\ul\cf2\ul\f1\fs24 Step}}}}{\f0\fs22{\field{\*\fldinst{HYPERLINK "https://medium.com/@ericwindmill/step-by-step-planning-a-web-application-ddaa010a8353"}}{\fldrslt{\ul\cf2\ul\f1\fs24  }}}}{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "https://medium.com/@ericwindmill/step-by-step-planning-a-web-application-ddaa010a8353"}}{\fldrslt{\ul\cf2\ul\f1\fs24 By}}}}{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "https://medium.com/@ericwindmill/step-by-step-planning-a-web-application-ddaa010a8353"}}{\fldrslt{\ul\cf2\ul\f1\fs24  }}}}{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "https://medium.com/@ericwindmill/step-by-step-planning-a-web-application-ddaa010a8353"}}{\fldrslt{\ul\cf2\ul\f1\fs24 Step}}}}{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "https://medium.com/@ericwindmill/step-by-step-planning-a-web-application-ddaa010a8353"}}{\fldrslt{\ul\cf2\ul\f1\fs24 : }}}}{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "https://medium.com/@ericwindmill/step-by-step-planning-a-web-application-ddaa010a8353"}}{\fldrslt{\ul\cf2\ul\f1\fs24 Planning}}}}{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "https://medium.com/@ericwindmill/step-by-step-planning-a-web-application-ddaa010a8353"}}{\fldrslt{\ul\cf2\ul\f1\fs24  }}}}{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "https://medium.com/@ericwindmill/step-by-step-planning-a-web-application-ddaa010a8353"}}{\fldrslt{\ul\cf2\ul\f1\fs24 a}}}}{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "https://medium.com/@ericwindmill/step-by-step-planning-a-web-application-ddaa010a8353"}}{\fldrslt{\ul\cf2\ul\f1\fs24  }}}}{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "https://medium.com/@ericwindmill/step-by-step-planning-a-web-application-ddaa010a8353"}}{\fldrslt{\ul\cf2\ul\f1\fs24 web}}}}{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "https://medium.com/@ericwindmill/step-by-step-planning-a-web-application-ddaa010a8353"}}{\fldrslt{\ul\cf2\ul\f1\fs24  }}}}{\ulnone\f0\fs22{\field{\*\fldinst{HYPERLINK "https://medium.com/@ericwindmill/step-by-step-planning-a-web-application-ddaa010a8353"}}{\fldrslt{\ul\cf2\ul\f1\fs24 application}}}}\ulnone\b\f0\fs36\par
+}
+ 
