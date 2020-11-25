@@ -7,17 +7,22 @@ using System.Threading.Tasks;
 
 namespace eRef.Data
 {
-    public class Voter
+    public class Legislator
     {
+        public enum Position
+        {
+            Legislator,
+            Staffer
+        }
+        
         [Key]
         public int ID { get; set; }
         [Required]
-        [Display(Name = "Full Name")]
+        [Display(Name="First and Last Name")]
         public string Name { get; set; }
+        public Position JobRole { get; set; }
+        public string PartyAffiliation { get; set; }
         [Required]
-        public int VoterID { get; set; }
-        public string PartyAff { get; set; }
-        public string Location { get; set; }
-
+        public int District { get; set; }
     }
 }

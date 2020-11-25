@@ -33,6 +33,8 @@ namespace eRef.Data
         }
 
         public DbSet<Voter> Voters { get; set; }
+        public DbSet<Law> Laws { get; set; }
+        public DbSet<Legislator> Legislators { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

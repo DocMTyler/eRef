@@ -1,0 +1,50 @@
+﻿@model eRef.Models.VoterModels.VoterListItem
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Voter</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VoterID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VoterID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PartyAff)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PartyAff)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

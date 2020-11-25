@@ -55,6 +55,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="Law.cs" />
+    <Compile Include="Legislator.cs" />
     <Compile Include="Voter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
