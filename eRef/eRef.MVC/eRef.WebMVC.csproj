@@ -169,6 +169,8 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LawController.cs" />
+    <Compile Include="Controllers\LegislatorController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\VoterController.cs" />
     <Compile Include="Global.asax.cs">
@@ -240,9 +242,15 @@
     <Content Include="Views\Voter\Details.cshtml" />
     <Content Include="Views\Voter\Edit.cshtml" />
     <Content Include="Views\Voter\Delete.cshtml" />
+    <Content Include="Views\Law\Index.cshtml" />
+    <Content Include="Views\Law\Create.cshtml" />
+    <Content Include="Views\Law\Details.cshtml" />
+    <Content Include="Views\Law\Edit.cshtml" />
+    <Content Include="Views\Law\DeleteLaw.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Legislator\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

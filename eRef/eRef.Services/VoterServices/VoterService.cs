@@ -11,13 +11,13 @@ namespace eRef.Services
 {
     public class VoterService
     {
-        private readonly Guid _userID;
+        public Guid _userID;
 
         private readonly ApplicationDbContext _voter = new ApplicationDbContext();
 
         public VoterService(Guid userID)
         {
-            userID = _userID;
+            _userID = userID;
         }
 
         public bool RegisterVoter(VoterRegister model)
@@ -51,7 +51,7 @@ namespace eRef.Services
 
         public VoterListItem ListVoterByID(int id)
         {
-            var voterEntry = _voter.Voters.Single(v => v.VoterID == id);
+            var voterEntry = _voter.Voters.Single(v => v.ID == id);
             return new VoterListItem
             {
                 Name = voterEntry.Name,

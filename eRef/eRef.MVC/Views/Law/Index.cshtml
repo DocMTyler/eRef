@@ -1,13 +1,15 @@
-﻿@model IEnumerable<eRef.Models.VoterModels.VoterListItem>
+﻿@model IEnumerable<eRef.Models.LawModels.LawListItem>
+
 @{
-    ViewBag.Title = "Voter Information";
+    ViewBag.Title = "Information on Laws";
 }
 
-<h2>Voters</h2>
+<h2>Laws</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+
 @if (TempData.ContainsKey("SaveResult"))
 {
     <div class="alert alert-success fade in" role="alert">
@@ -22,16 +24,22 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.VoterID)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.Name)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.PartyAff)
+            @Html.DisplayNameFor(model => model.MajDescrip)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Location)
+            @Html.DisplayNameFor(model => model.MinDescrip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AddDescrip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Author)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VoteScheduled)
         </th>
         <th></th>
     </tr>
@@ -40,16 +48,22 @@
     {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.VoterID)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.PartyAff)
+                @Html.DisplayFor(modelItem => item.MajDescrip)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Location)
+                @Html.DisplayFor(modelItem => item.MinDescrip)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AddDescrip)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VoteScheduled)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
@@ -58,4 +72,5 @@
             </td>
         </tr>
     }
+
 </table>

@@ -1,6 +1,5 @@
-﻿using eRef.Models;
-using eRef.Models.VoterModels;
-using eRef.Services;
+﻿using eRef.Models.LawModels;
+using eRef.Services.LawServices;
 using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
@@ -10,18 +9,19 @@ using System.Web.Mvc;
 
 namespace eRef.MVC.Controllers
 {
-    public class VoterController : Controller
+    public class LawController : Controller
     {
-        // GET: Voter Index
+        // GET: Law
         public ActionResult Index()
         {
             var userID = Guid.Parse(User.Identity.GetUserId());
-            var service = new VoterService(userID);
-            var model = service.ListVoter();
+            var service = new LawService(userID);
+            var model = service.ListLaw();
 
             return View(model);
         }
 
+        
         //GET: Create
         public ActionResult Create()
         {
@@ -31,19 +31,19 @@ namespace eRef.MVC.Controllers
         //POST: Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(VoterRegister model)
+        public ActionResult Create(LawAuthor model)
         {
             if (!ModelState.IsValid) return View(model);
 
-            var service = CreateVoterService();
+            var service = CreateLawService();
 
-            if (service.RegisterVoter(model))
+            if (service.AuthorLaw(model))
             {
-                TempData["Save Result"] = "Voter has been registered";
+                TempData["Save Result"] = "Law has been added";
                 return RedirectToAction("Index");
             }
 
-            ModelState.AddModelError("", "Voter could not be registered.");
+            ModelState.AddModelError("", "Law could not be added.");
 
             return View(model);
         }
@@ -51,58 +51,60 @@ namespace eRef.MVC.Controllers
         //GET: Read
         public ActionResult Details(int id)
         {
-            var service = CreateVoterService();
-            var model = service.ListVoterByID(id);
+            var service = CreateLawService();
+            var model = service.IndLaw(id);
 
             return View(model);
         }
 
-        //GET: Edit
+        //GET: Update
         public ActionResult Edit(int id)
         {
-            var service = CreateVoterService();
-            var detail = service.ListVoterByID(id);
-            var model = new VoterUpdate
+            var service = CreateLawService();
+            var detail = service.IndLaw(id);
+            var model = new LawUpdate
             {
                 Name = detail.Name,
-                VoterID = detail.VoterID,
-                PartyAff = detail.PartyAff,
-                Location = detail.Location
+                MajDescrip = detail.MajDescrip,
+                MinDescrip = detail.MinDescrip,
+                AddDescrip = detail.AddDescrip,
+                Author = detail.Author,
+                VoteScheduled = detail.VoteScheduled
             };
 
             return View(model);
         }
 
-        //POST: Edit
+        //POST: Update
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, VoterUpdate model)
+        public ActionResult Edit(int id, LawUpdate model)
         {
             if (!ModelState.IsValid) return View(model);
 
             if(model.ID != id)
             {
-                ModelState.AddModelError("", "Voter ID mismatch");
+                ModelState.AddModelError("", "Law does not match");
                 return View(model);
             }
 
-            var service = CreateVoterService();
+            var service = CreateLawService();
 
-            if (service.UpdateVoterRegistrationInfo(model))
+            if (service.UpdateLaw(model))
             {
-                TempData["Save Result"] = "Voter Registration has been updated";
+                TempData["SaveResult"] = "Law has been updated";
                 return RedirectToAction("Index");
             }
 
-            ModelState.AddModelError("","Voter ID could not be updated");
+            ModelState.AddModelError("","Law could not be updated");
             return View(model);
         }
 
         //GET: Delete
         public ActionResult Delete(int id)
         {
-            var service = CreateVoterService();
-            var model = service.ListVoterByID(id);
+            var service = CreateLawService();
+            var model = service.IndLaw(id);
 
             return View(model);
         }
@@ -111,22 +113,21 @@ namespace eRef.MVC.Controllers
         [HttpPost]
         [ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteVoter(int id)
+        public ActionResult DeleteLaw(int id)
         {
-            var service = CreateVoterService();
+            var service = CreateLawService();
 
-            service.DeleteVoter(id);
+            service.DeleteLaw(id);
 
-            TempData["Save Result"] = "Voter deleted";
+            TempData["Save Result"] = "Law deleted";
 
             return RedirectToAction("Index");
         }
 
-
-        private VoterService CreateVoterService()
+        private LawService CreateLawService()
         {
             var userID = Guid.Parse(User.Identity.GetUserId());
-            var service = new VoterService(userID);
+            var service = new LawService(userID);
             return service;
         }
     }

@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LawServices\LawService.cs" />
     <Compile Include="VoterServices\VoterService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -62,7 +63,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="LegislationServices\" />
     <Folder Include="LegislatorServices\" />
   </ItemGroup>
   <ItemGroup>
