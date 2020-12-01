@@ -41,6 +41,12 @@
         <th>
             @Html.DisplayNameFor(model => model.VoteScheduled)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VotesFor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VotesAgainst)
+        </th>
         <th></th>
     </tr>
 
@@ -65,6 +71,13 @@
             <td>
                 @Html.DisplayFor(modelItem => item.VoteScheduled)
             </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VotesFor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VotesAgainst)
+            </td>
+            
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
                 @Html.ActionLink("Details", "Details", new { id = item.ID }) |

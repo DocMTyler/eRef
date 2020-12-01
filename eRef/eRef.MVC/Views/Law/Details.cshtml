@@ -58,9 +58,26 @@
             @Html.DisplayFor(model => model.VoteScheduled)
         </dd>
 
+        <dt>
+            @Html.DisplayNameFor(model => model.VotesFor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VotesFor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VotesAgainst)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VotesAgainst)
+        </dd>
     </dl>
 </div>
 <p>
+    @Html.ActionLink("Vote For", "VoteFor", new { id = Model.ID })
+    @Html.ActionLink("Vote Against", "VoteAgainst", new { id = Model.ID })
     @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

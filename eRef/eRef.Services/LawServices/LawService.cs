@@ -88,5 +88,32 @@ namespace eRef.Services.LawServices
             _law.Laws.Remove(lawEntry);
             return _law.SaveChanges() == 1;
         }
+
+        public bool VoteFor(int id)
+        {
+            var lawEntry = _law.Laws.Single(l => l.ID == id);
+            
+            lawEntry.VotesFor += 1;
+            return _law.SaveChanges() == 1;
+        }
+
+        public bool VoteAgainst(int id)
+        {
+            var lawEntry = _law.Laws.Single(l => l.ID == id);
+
+            lawEntry.VotesAgainst += 1;
+            return _law.SaveChanges() == 1;
+        }
+
+        public float CalculatePercentFor(int id)
+        {
+            var lawEntry = _law.Laws.Single(l => l.ID == id);
+
+            var totalVote = lawEntry.VotesFor + lawEntry.VotesAgainst;
+            var percentFor = lawEntry.VotesFor / totalVote;
+
+            return percentFor;
+        }
+
     }
 }

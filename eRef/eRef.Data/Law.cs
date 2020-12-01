@@ -25,6 +25,10 @@ namespace eRef.Data
         [Required]
         [Display(Name = "Date and Time of Vote")]
         public DateTimeOffset VoteScheduled { get; set; }
+        [Display(Name = "Votes For")]
+        public int VotesFor { get; set; }
+        [Display(Name = "Votes Against")]
+        public int VotesAgainst { get; set; }
         
     }
 }

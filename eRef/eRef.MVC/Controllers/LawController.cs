@@ -20,7 +20,6 @@ namespace eRef.MVC.Controllers
 
             return View(model);
         }
-
         
         //GET: Create
         public ActionResult Create()
@@ -117,11 +116,48 @@ namespace eRef.MVC.Controllers
         {
             var service = CreateLawService();
 
-            service.DeleteLaw(id);
+            if (service.DeleteLaw(id))
+            {
+                TempData["Save Result"] = "Law deleted";
+                return RedirectToAction("Index");
+            }
 
-            TempData["Save Result"] = "Law deleted";
+            ModelState.AddModelError("", "Law could not be deleted");
+            return View();
+        }
 
-            return RedirectToAction("Index");
+        [HttpPost]
+        [ActionName("Vote For")]
+        [ValidateAntiForgeryToken]
+        public ActionResult VoteFor(int id)
+        {
+            var service = CreateLawService();
+
+            if (service.VoteFor(id))
+            {
+                TempData["Save Result"] = "You voted for";
+                return RedirectToAction("Index");
+            }
+            
+            ModelState.AddModelError("", "Law could not be deleted");
+            return View();
+        }
+        
+        [HttpPost]
+        [ActionName("Vote Against")]
+        [ValidateAntiForgeryToken]
+        public ActionResult VoteAgainst(int id)
+        {
+            var service = CreateLawService();
+
+            if (service.VoteAgainst(id))
+            {
+                TempData["Save Result"] = "You voted against";
+                return RedirectToAction("Index");
+            }
+
+            ModelState.AddModelError("", "Law could not be deleted");
+            return View();
         }
 
         private LawService CreateLawService()

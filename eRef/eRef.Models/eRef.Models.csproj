@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LawModels\ForVote.cs" />
     <Compile Include="LawModels\LawAuthor.cs" />
     <Compile Include="LawModels\LawListItem.cs" />
     <Compile Include="LawModels\LawUpdate.cs" />
