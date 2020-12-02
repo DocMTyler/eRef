@@ -247,10 +247,14 @@
     <Content Include="Views\Law\Details.cshtml" />
     <Content Include="Views\Law\Edit.cshtml" />
     <Content Include="Views\Law\DeleteLaw.cshtml" />
+    <Content Include="Views\Legislator\Index.cshtml" />
+    <Content Include="Views\Legislator\Create.cshtml" />
+    <Content Include="Views\Legislator\Details.cshtml" />
+    <Content Include="Views\Legislator\Edit.cshtml" />
+    <Content Include="Views\Legislator\DeleteLegislator.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Legislator\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
