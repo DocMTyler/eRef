@@ -12,6 +12,6 @@ namespace eRef.Models
         public string Name { get; set; }
         public int VoterID { get; set; }
         public string PartyAff { get; set; }
-        public string Location { get; set; }
+        public int District { get; set; }
     }
 }

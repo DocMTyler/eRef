@@ -28,7 +28,7 @@ namespace eRef.Services
                 Name = model.Name,
                 VoterID = model.VoterID,
                 PartyAff = model.PartyAff,
-                Location = model.Location
+                District = model.District
             };
 
             _voter.Voters.Add(entity);
@@ -40,10 +40,11 @@ namespace eRef.Services
             var voterEntries = _voter.Voters.ToList();
             var voterList = voterEntries.Select(v => new VoterListItem
             {
+                ID = v.ID,
                 Name = v.Name,
                 VoterID = v.VoterID,
                 PartyAff = v.PartyAff,
-                Location = v.Location
+                District=v.District
             }).ToList();
 
             return voterList;
@@ -54,10 +55,11 @@ namespace eRef.Services
             var voterEntry = _voter.Voters.Single(v => v.ID == id);
             return new VoterListItem
             {
+                ID = voterEntry.ID,
                 Name = voterEntry.Name,
                 VoterID = voterEntry.VoterID,
                 PartyAff = voterEntry.PartyAff,
-                Location = voterEntry.Location
+                District = voterEntry.District
             };
         }
 
@@ -68,7 +70,7 @@ namespace eRef.Services
             voterEntry.Name = voter.Name;
             voterEntry.VoterID = voter.VoterID;
             voterEntry.PartyAff = voter.PartyAff;
-            voterEntry.Location = voter.Location;
+            voterEntry.District = voter.District;
 
             return _voter.SaveChanges() == 1;
         }

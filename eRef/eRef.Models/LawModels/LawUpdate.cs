@@ -21,5 +21,9 @@ namespace eRef.Models.LawModels
         public string Author { get; set; }
 
         public DateTimeOffset VoteScheduled { get; set; }
+        
+        public int? VotesFor { get; set; }
+
+        public int? VotesAgainst { get; set; }
     }
 }

@@ -39,6 +39,7 @@ namespace eRef.Services.LegislatorService
 
             var listOfLegislators = legislatorEntries.Select(l => new LegislatorListItem
             {
+                ID = l.ID,
                 Name = l.Name,
                 JobRole = l.JobRole,
                 District = l.District
@@ -53,6 +54,7 @@ namespace eRef.Services.LegislatorService
 
             return new LegislatorListItem
             {
+                ID = legislatorEntry.ID,
                 Name = legislatorEntry.Name,
                 JobRole = legislatorEntry.JobRole,
                 District = legislatorEntry.District

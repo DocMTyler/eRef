@@ -29,7 +29,9 @@ namespace eRef.Services.LawServices
                 MinDescrip = model.MinDescrip,
                 AddDescrip = model.AddDescrip,
                 Author = model.Author,
-                VoteScheduled = model.VoteScheduled
+                VoteScheduled = model.VoteScheduled, 
+                VotesFor = 0,
+                VotesAgainst = 0
             };
 
             _law.Laws.Add(entity);
@@ -42,6 +44,7 @@ namespace eRef.Services.LawServices
             
             var listOfLaws = lawEntries.Select(l => new LawListItem
             {
+                ID=l.ID,
                 Name = l.Name,
                 MajDescrip = l.MajDescrip,
                 MinDescrip = l.MinDescrip,
@@ -59,6 +62,7 @@ namespace eRef.Services.LawServices
 
             return new LawListItem
             {
+                ID = lawEntry.ID,
                 Name = lawEntry.Name,
                 MajDescrip = lawEntry.MajDescrip,
                 MinDescrip = lawEntry.MinDescrip,

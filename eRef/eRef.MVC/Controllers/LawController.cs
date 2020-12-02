@@ -127,7 +127,7 @@ namespace eRef.MVC.Controllers
         }
 
         [HttpPost]
-        [ActionName("Vote For")]
+        [ActionName("VoteFor")]
         [ValidateAntiForgeryToken]
         public ActionResult VoteFor(int id)
         {
@@ -144,7 +144,7 @@ namespace eRef.MVC.Controllers
         }
         
         [HttpPost]
-        [ActionName("Vote Against")]
+        [ActionName("VoteAgainst")]
         [ValidateAntiForgeryToken]
         public ActionResult VoteAgainst(int id)
         {

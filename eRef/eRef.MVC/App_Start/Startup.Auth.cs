@@ -6,6 +6,7 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using eRef.MVC.Models;
+using eRef.Data;
 
 namespace eRef.MVC
 {
