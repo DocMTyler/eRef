@@ -139,7 +139,7 @@ namespace eRef.MVC.Controllers
                 return RedirectToAction("Index");
             }
             
-            ModelState.AddModelError("", "Law could not be deleted");
+            ModelState.AddModelError("", "Law could not be voted on");
             return View();
         }
         
@@ -156,7 +156,7 @@ namespace eRef.MVC.Controllers
                 return RedirectToAction("Index");
             }
 
-            ModelState.AddModelError("", "Law could not be deleted");
+            ModelState.AddModelError("", "Law could not be voted on");
             return View();
         }
 

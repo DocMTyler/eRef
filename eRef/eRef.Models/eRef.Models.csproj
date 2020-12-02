@@ -54,10 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LawModels\ForVote.cs" />
     <Compile Include="LawModels\LawAuthor.cs" />
     <Compile Include="LawModels\LawListItem.cs" />
     <Compile Include="LawModels\LawUpdate.cs" />
+    <Compile Include="LegislatorModels\LegislatorListItem.cs" />
+    <Compile Include="LegislatorModels\LegislatorUpdate.cs" />
+    <Compile Include="LegislatorModels\NewLegislatorCreate.cs" />
     <Compile Include="VoterModels\VoterListItem.cs" />
     <Compile Include="VoterModels\VoterRegister.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -68,7 +70,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="LegislatorModels\" />
+    <ProjectReference Include="..\eRef.Data\eRef.Data.csproj">
+      <Project>{1EF5C372-420A-43AC-A8D7-EB15C808ADC9}</Project>
+      <Name>eRef.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

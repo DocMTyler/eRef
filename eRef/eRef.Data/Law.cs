@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,6 +30,5 @@ namespace eRef.Data
         public int VotesFor { get; set; }
         [Display(Name = "Votes Against")]
         public int VotesAgainst { get; set; }
-        
     }
 }

@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LawServices\LawService.cs" />
+    <Compile Include="LegislatorServices\LegislatorService.cs" />
     <Compile Include="VoterServices\VoterService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -62,9 +63,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="LegislatorServices\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\eRef.Data\eRef.Data.csproj">
       <Project>{1EF5C372-420A-43AC-A8D7-EB15C808ADC9}</Project>

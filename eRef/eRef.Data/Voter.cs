@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,6 +19,9 @@ namespace eRef.Data
         public int VoterID { get; set; }
         public string PartyAff { get; set; }
         public string Location { get; set; }
+        [ForeignKey(nameof(Legislator))]
+        public int DistrictID { get; set; }
+        public virtual Legislator Legislator { get; set; }
 
     }
 }
