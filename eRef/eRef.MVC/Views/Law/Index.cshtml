@@ -4,10 +4,10 @@
     ViewBag.Title = "Information on Laws";
 }
 
-<h2>Laws</h2>
+<h2 style="text-align:center;font-family:Impact">Laws</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New Law Entry", "Create")
 </p>
 
 @if (TempData.ContainsKey("SaveResult"))
@@ -21,8 +21,11 @@
     </div>
 }
 
-<table class="table">
+<table class="table" style="text-align:center">
     <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID)
+        </th>
         <th>
             @Html.DisplayNameFor(model => model.Name)
         </th>
@@ -54,6 +57,9 @@
     {
         <tr>
             <td>
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
@@ -79,9 +85,9 @@
             </td>
             
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                @Html.ActionLink("Details", "Details", new { id = item.ID }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                @Html.ActionLink("Update Law Info", "Edit", new { id = item.ID }) |<br />
+                @Html.ActionLink("Law Info", "Details", new { id = item.ID }) | <br />
+                @Html.ActionLink("Erase Law!", "Delete", new { id = item.ID })
             </td>
         </tr>
     }

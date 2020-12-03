@@ -11,6 +11,7 @@ namespace eRef.Data
     public class Law
     {
         [Key]
+        [Display(Name="Law Number")]
         public int ID { get; set; }
         [Required]
         [Display(Name="Legislation Title")]

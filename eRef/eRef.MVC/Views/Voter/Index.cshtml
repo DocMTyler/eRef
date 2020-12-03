@@ -3,10 +3,10 @@
     ViewBag.Title = "Voter Information";
 }
 
-<h2>Voters</h2>
+<h2 style="text-align:center;font-family:Impact">Voters</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
+<p style="text-align:center">
+    @Html.ActionLink("Register as a new voter on eRef!", "Create")
 </p>
 @if (TempData.ContainsKey("SaveResult"))
 {
@@ -19,7 +19,7 @@
     </div>
 }
 
-<table class="table">
+<table class="table" style="text-align:center">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.VoterID)
@@ -52,9 +52,9 @@
                 @Html.DisplayFor(modelItem => item.District)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                @Html.ActionLink("Details", "Details", new { id = item.ID }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                @Html.ActionLink("Update my Voter Info", "Edit", new { id = item.ID }) |<br />
+                @Html.ActionLink("My Info", "Details", new { id = item.ID }) |<br />
+                @Html.ActionLink("Delete me!", "Delete", new { id = item.ID })
             </td>
         </tr>
     }
