@@ -4,11 +4,11 @@
     ViewBag.Title = "DeleteLegislator";
 }
 
-<h2>DeleteLegislator</h2>
 
-<h3>Are you sure you want to delete this?</h3>
+
+<h2 style="font-family:Impact;text-align:center">Delete this Legislator?</h2>
 <div>
-    <h4>LegislatorListItem</h4>
+  
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -33,7 +33,7 @@
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <input type="submit" value="Delete" class="btn btn-default" /> <br />
             @Html.ActionLink("Back to List", "Index")
         </div>
     }

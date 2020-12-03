@@ -4,10 +4,10 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Law Details</h2>
+<h2 style="text-align:center;font-family:Impact">Law Details</h2>
 
 <div>
-    <h4>Law</h4>
+    
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -83,9 +83,9 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Vote For", "VoteFor", new { id = Model.ID })
-    @Html.ActionLink("Vote Against", "VoteAgainst", new { id = Model.ID })
-    @Html.ActionLink("Delete", "Delete", new { id = Model.ID })
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Vote For", "VoteFor", new { id = Model.ID })<br />
+    @Html.ActionLink("Vote Against", "VoteAgainst", new { id = Model.ID })<br />
+    @Html.ActionLink("Delete", "Delete", new { id = Model.ID })<br />
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) <br />
     @Html.ActionLink("Back to List", "Index")
 </p>

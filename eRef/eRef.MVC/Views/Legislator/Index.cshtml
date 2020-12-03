@@ -6,7 +6,7 @@
 
 <h2 style="text-align:center;font-family:Impact">Legislators</h2>
 
-<p style="text-align:center;color:red">
+<p style="text-align:center">
     @Html.ActionLink("Register as a Legislator on eRef!", "Create")
 </p>
 
@@ -23,10 +23,10 @@
 
 <table class="table" style="text-align:center">
     <tr>
-        <th>
+        <th style="color:red">
             @Html.DisplayNameFor(model => model.Name)
         </th>
-        <th>
+        <th style="color:dodgerblue">
             @Html.DisplayNameFor(model => model.District)
         </th>
         <th></th>
@@ -42,8 +42,8 @@
                 @Html.DisplayFor(modelItem => item.District)
             </td>
             <td>
-                @Html.ActionLink("Update my Info", "Edit", new { id = item.ID }) |<br />
-                @Html.ActionLink("My Info", "Details", new { id = item.ID }) |<br />
+                @Html.ActionLink("Update my Info", "Edit", new { id = item.ID })<br />
+                @Html.ActionLink("My Info", "Details", new { id = item.ID })<br />
                 @Html.ActionLink("I got booted! Delete me!", "Delete", new { id = item.ID })
             </td>
         </tr>

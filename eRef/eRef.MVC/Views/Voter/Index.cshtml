@@ -21,16 +21,16 @@
 
 <table class="table" style="text-align:center">
     <tr>
-        <th>
+        <th style="color:dodgerblue">
             @Html.DisplayNameFor(model => model.VoterID)
         </th>
-        <th>
+        <th style="color:red">
             @Html.DisplayNameFor(model => model.Name)
         </th>
-        <th>
+        <th style="color:dodgerblue">
             @Html.DisplayNameFor(model => model.PartyAff)
         </th>
-        <th>
+        <th style="color:red">
             @Html.DisplayNameFor(model => model.District)
         </th>
         <th></th>
@@ -52,8 +52,8 @@
                 @Html.DisplayFor(modelItem => item.District)
             </td>
             <td>
-                @Html.ActionLink("Update my Voter Info", "Edit", new { id = item.ID }) |<br />
-                @Html.ActionLink("My Info", "Details", new { id = item.ID }) |<br />
+                @Html.ActionLink("Update my Voter Info", "Edit", new { id = item.ID }) <br />
+                @Html.ActionLink("My Info", "Details", new { id = item.ID }) <br />
                 @Html.ActionLink("Delete me!", "Delete", new { id = item.ID })
             </td>
         </tr>
