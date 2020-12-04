@@ -1,0 +1,91 @@
+﻿@model eRef.Models.LawModels.LawListItem
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2 style="text-align:center;font-family:Impact">Law Details</h2>
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MajDescrip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MajDescrip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MinDescrip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MinDescrip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AddDescrip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AddDescrip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Author)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Author)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VoteScheduled)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VoteScheduled)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VotesFor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VotesFor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VotesAgainst)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VotesAgainst)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Vote For", "VoteFor", new { id = Model.ID })<br />
+    @Html.ActionLink("Vote Against", "VoteAgainst", new { id = Model.ID })<br />
+    @Html.ActionLink("Delete", "Delete", new { id = Model.ID })<br />
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) <br />
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -24,6 +24,7 @@ namespace eRef.Models.LawModels
 
         public string Author { get; set; }
 
+        [DataType(DataType.Date)]
         [Display(Name="Date of Vote")]
         public DateTimeOffset VoteScheduled { get; set; }
 

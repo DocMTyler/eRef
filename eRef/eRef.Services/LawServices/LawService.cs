@@ -50,7 +50,9 @@ namespace eRef.Services.LawServices
                 MinDescrip = l.MinDescrip,
                 AddDescrip = l.AddDescrip,
                 Author = l.Author,
-                VoteScheduled = l.VoteScheduled
+                VoteScheduled = l.VoteScheduled,
+                VotesFor = l.VotesFor,
+                VotesAgainst = l.VotesAgainst
             }).ToList();
 
             return listOfLaws;
@@ -68,7 +70,9 @@ namespace eRef.Services.LawServices
                 MinDescrip = lawEntry.MinDescrip,
                 AddDescrip = lawEntry.AddDescrip,
                 Author = lawEntry.Author,
-                VoteScheduled = lawEntry.VoteScheduled
+                VoteScheduled = lawEntry.VoteScheduled,
+                VotesFor = lawEntry.VotesFor,
+                VotesAgainst = lawEntry.VotesAgainst
             };
         }
 

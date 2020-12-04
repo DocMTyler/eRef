@@ -20,7 +20,7 @@ namespace eRef.Data
         public string PartyAff { get; set; }
         public string Location { get; set; }
         [ForeignKey(nameof(Legislator))]
-        public int District { get; set; }
+        public int LegislatorID { get; set; }
         public virtual Legislator Legislator { get; set; }
 
     }

@@ -1,0 +1,88 @@
+﻿@model eRef.Models.LawModels.LawListItem
+
+@{
+    ViewBag.Title = "Vote For Law";
+}
+
+<h2 style="text-align:center;font-family:Impact">Vote For Law</h2>
+
+<h3>Are you sure you want to Vote for this?</h3>
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MajDescrip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MajDescrip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MinDescrip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MinDescrip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AddDescrip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AddDescrip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Author)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Author)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VoteScheduled)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VoteScheduled)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VotesFor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VotesFor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VotesAgainst)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VotesAgainst)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Vote For" class="btn btn-default" /> <br />
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

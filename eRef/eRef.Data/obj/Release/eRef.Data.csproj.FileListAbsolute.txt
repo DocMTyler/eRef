@@ -1,0 +1,16 @@
+C:\Users\mtyle\Desktop\ElevenFiftyProjects\RedBadge\eRef\eRef\eRef.Data\bin\Release\eRef.Data.dll.config
+C:\Users\mtyle\Desktop\ElevenFiftyProjects\RedBadge\eRef\eRef\eRef.Data\bin\Release\eRef.Data.dll
+C:\Users\mtyle\Desktop\ElevenFiftyProjects\RedBadge\eRef\eRef\eRef.Data\bin\Release\eRef.Data.pdb
+C:\Users\mtyle\Desktop\ElevenFiftyProjects\RedBadge\eRef\eRef\eRef.Data\bin\Release\EntityFramework.dll
+C:\Users\mtyle\Desktop\ElevenFiftyProjects\RedBadge\eRef\eRef\eRef.Data\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\mtyle\Desktop\ElevenFiftyProjects\RedBadge\eRef\eRef\eRef.Data\bin\Release\Microsoft.AspNet.Identity.Core.dll
+C:\Users\mtyle\Desktop\ElevenFiftyProjects\RedBadge\eRef\eRef\eRef.Data\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\mtyle\Desktop\ElevenFiftyProjects\RedBadge\eRef\eRef\eRef.Data\bin\Release\EntityFramework.xml
+C:\Users\mtyle\Desktop\ElevenFiftyProjects\RedBadge\eRef\eRef\eRef.Data\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\mtyle\Desktop\ElevenFiftyProjects\RedBadge\eRef\eRef\eRef.Data\bin\Release\Microsoft.AspNet.Identity.Core.xml
+C:\Users\mtyle\Desktop\ElevenFiftyProjects\RedBadge\eRef\eRef\eRef.Data\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\mtyle\Desktop\ElevenFiftyProjects\RedBadge\eRef\eRef\eRef.Data\obj\Release\eRef.Data.csprojAssemblyReference.cache
+C:\Users\mtyle\Desktop\ElevenFiftyProjects\RedBadge\eRef\eRef\eRef.Data\obj\Release\eRef.Data.csproj.CoreCompileInputs.cache
+C:\Users\mtyle\Desktop\ElevenFiftyProjects\RedBadge\eRef\eRef\eRef.Data\obj\Release\eRef.Data.csproj.CopyComplete
+C:\Users\mtyle\Desktop\ElevenFiftyProjects\RedBadge\eRef\eRef\eRef.Data\obj\Release\eRef.Data.dll
+C:\Users\mtyle\Desktop\ElevenFiftyProjects\RedBadge\eRef\eRef\eRef.Data\obj\Release\eRef.Data.pdb

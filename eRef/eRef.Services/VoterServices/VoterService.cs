@@ -28,7 +28,7 @@ namespace eRef.Services
                 Name = model.Name,
                 VoterID = model.VoterID,
                 PartyAff = model.PartyAff,
-                District = model.District
+                LegislatorID = model.LegislatorID
             };
 
             _voter.Voters.Add(entity);
@@ -44,7 +44,7 @@ namespace eRef.Services
                 Name = v.Name,
                 VoterID = v.VoterID,
                 PartyAff = v.PartyAff,
-                District=v.District
+                LegislatorID=v.LegislatorID
             }).ToList();
 
             return voterList;
@@ -59,7 +59,7 @@ namespace eRef.Services
                 Name = voterEntry.Name,
                 VoterID = voterEntry.VoterID,
                 PartyAff = voterEntry.PartyAff,
-                District = voterEntry.District
+                LegislatorID = voterEntry.LegislatorID
             };
         }
 
@@ -70,7 +70,7 @@ namespace eRef.Services
             voterEntry.Name = voter.Name;
             voterEntry.VoterID = voter.VoterID;
             voterEntry.PartyAff = voter.PartyAff;
-            voterEntry.District = voter.District;
+            voterEntry.LegislatorID = voter.LegislatorID;
 
             return _voter.SaveChanges() == 1;
         }

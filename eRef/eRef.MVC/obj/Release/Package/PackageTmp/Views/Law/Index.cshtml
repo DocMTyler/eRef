@@ -1,0 +1,94 @@
+﻿@model IEnumerable<eRef.Models.LawModels.LawListItem>
+
+@{
+    ViewBag.Title = "Information on Laws";
+}
+
+<h2 style="text-align:center;font-family:Impact">Laws</h2>
+
+<p style="text-align:center">
+    @Html.ActionLink("Create New Law Entry", "Create")
+</p>
+
+@if (TempData.ContainsKey("SaveResult"))
+{
+    <div class="alert alert-success fade in" role="alert">
+        @ViewBag.SaveResult
+        <button type="button" class="close" data-dismiss="alert">
+            <span>&times;</span>
+        </button>
+        @TempData["SaveResult"]
+    </div>
+}
+
+<table class="table" style="text-align:center">
+    <tr style=" border-bottom:1px solid black">
+        <th style="color:red">
+            @Html.DisplayNameFor(model => model.ID)
+        </th>
+        <th style="color:dodgerblue">
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th style="color:red">
+            @Html.DisplayNameFor(model => model.MajDescrip)
+        </th>
+        <th style="color:dodgerblue">
+            @Html.DisplayNameFor(model => model.MinDescrip)
+        </th>
+        <th style="color:red">
+            @Html.DisplayNameFor(model => model.AddDescrip)
+        </th>
+        <th style="color:dodgerblue">
+            @Html.DisplayNameFor(model => model.Author)
+        </th>
+        <th style="color:red">
+            @Html.DisplayNameFor(model => model.VoteScheduled)
+        </th>
+        <th style="color:dodgerblue">
+            @Html.DisplayNameFor(model => model.VotesFor)
+        </th>
+        <th style="color:red">
+            @Html.DisplayNameFor(model => model.VotesAgainst)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr style="font-family:Arial, Helvetica, sans-serif">
+            <td>
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MajDescrip)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MinDescrip)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AddDescrip)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VoteScheduled)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VotesFor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VotesAgainst)
+            </td>
+            <td>
+                @Html.ActionLink("Update Law", "Edit", new { id = item.ID }) <br />
+                @Html.ActionLink("Law Info", "Details", new { id = item.ID }) <br />
+                @Html.ActionLink("Erase Law!", "Delete", new { id = item.ID })
+            </td>
+        </tr>
+    }
+
+</table>

@@ -15,7 +15,7 @@ namespace eRef.Models
         public int VoterID { get; set; }
         [Display(Name="Party Affiliation(If any)")]
         public string PartyAff { get; set; }
-        [Display(Name="District Number")]
-        public int District { get; set; }
+        [Display(Name = "Representative ID (Legislator must FIRST be registered!)")]
+        public int LegislatorID { get; set; }
     }
 }

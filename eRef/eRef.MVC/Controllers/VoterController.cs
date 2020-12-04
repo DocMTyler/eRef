@@ -67,7 +67,7 @@ namespace eRef.MVC.Controllers
                 Name = detail.Name,
                 VoterID = detail.VoterID,
                 PartyAff = detail.PartyAff,
-                District=detail.District
+                LegislatorID=detail.LegislatorID
             };
 
             return View(model);

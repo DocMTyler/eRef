@@ -126,10 +126,19 @@ namespace eRef.MVC.Controllers
             return View();
         }
 
+        //GET: VoteFor
+        public ActionResult VoteFor(int id)
+        {
+            var service = CreateLawService();
+            var model = service.IndLaw(id);
+
+            return View(model);
+        }
+
         [HttpPost]
         [ActionName("VoteFor")]
         [ValidateAntiForgeryToken]
-        public ActionResult VoteFor(int id)
+        public ActionResult VoteForLaw(int id)
         {
             var service = CreateLawService();
 
@@ -142,11 +151,20 @@ namespace eRef.MVC.Controllers
             ModelState.AddModelError("", "Law could not be voted on");
             return View();
         }
-        
+
+        //GET: Delete
+        public ActionResult VoteAgainst(int id)
+        {
+            var service = CreateLawService();
+            var model = service.IndLaw(id);
+
+            return View(model);
+        }
+
         [HttpPost]
         [ActionName("VoteAgainst")]
         [ValidateAntiForgeryToken]
-        public ActionResult VoteAgainst(int id)
+        public ActionResult VoteAgainstLaw(int id)
         {
             var service = CreateLawService();
 

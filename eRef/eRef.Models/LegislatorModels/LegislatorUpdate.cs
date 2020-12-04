@@ -10,6 +10,7 @@ namespace eRef.Models.LegislatorModels
 {
     public class LegislatorUpdate
     {
+        [Display(Name = "Representative ID")]
         public int ID { get; set; }
 
         public string Name { get; set; }
