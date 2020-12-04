@@ -22,8 +22,11 @@ namespace eRef.Data
         public string MinDescrip { get; set; }
         [Display(Name = "Additional Descriptions relevant to the legislation")]
         public string AddDescrip { get; set; }
+        [ForeignKey(nameof(Legislator))]
         [Required]
-        public string Author { get; set; }
+        public int Author { get; set; }
+        public virtual Legislator Legislator { get; set; }
+
         [Required]
         [Display(Name = "Date and Time of Vote")]
         public DateTimeOffset VoteScheduled { get; set; }

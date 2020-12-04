@@ -22,7 +22,8 @@ namespace eRef.Models.LawModels
         [Display(Name="Additional Description")]
         public string AddDescrip { get; set; }
 
-        public string Author { get; set; }
+        [Display(Name="Author(Representative ID)")]
+        public int Author { get; set; }
 
         [DataType(DataType.Date)]
         [Display(Name="Date of Vote")]
