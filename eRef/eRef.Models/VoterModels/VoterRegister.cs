@@ -17,5 +17,8 @@ namespace eRef.Models
         public string PartyAff { get; set; }
         [Display(Name = "Representative ID (Legislator must FIRST be registered!)")]
         public int LegislatorID { get; set; }
+
+        public int VotesFor { get; set; }
+        public int VotesAgainst { get; set; }
     }
 }

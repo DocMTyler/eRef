@@ -45,6 +45,7 @@ namespace eRef.Services
                 VoterID = v.VoterID,
                 PartyAff = v.PartyAff,
                 LegislatorID=v.LegislatorID
+              
             }).ToList();
 
             return voterList;
@@ -59,7 +60,8 @@ namespace eRef.Services
                 Name = voterEntry.Name,
                 VoterID = voterEntry.VoterID,
                 PartyAff = voterEntry.PartyAff,
-                LegislatorID = voterEntry.LegislatorID
+                LegislatorID = voterEntry.LegislatorID,
+              
             };
         }
 

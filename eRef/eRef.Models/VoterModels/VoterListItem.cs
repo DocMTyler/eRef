@@ -18,5 +18,6 @@ namespace eRef.Models.VoterModels
         public string PartyAff { get; set; }
         [Display(Name="Representative ID")]
         public int LegislatorID { get; set; }
+
     }
 }
